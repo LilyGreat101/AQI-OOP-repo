@@ -9,8 +9,8 @@ public class Country extends AbstractLocation {
         this.cities = new ArrayList<>();
     }
 
-    public void addCity(City c){
-        this.cities.add(c);
+    public void addCity(City country){
+        this.cities.add(country);
     }
 
     public ArrayList <City> getCities(){
@@ -22,9 +22,9 @@ public class Country extends AbstractLocation {
 
         City max = cities.get(0);
 
-        for (City c : cities){
-            if(c.getHighestAQI()> max.getHighestAQI()) {
-                max=c;
+        for (City country : cities){
+            if(country.getHighestAQI()> max.getHighestAQI()) {
+                max=country;
             }
         }
         return max.getName();
@@ -33,3 +33,4 @@ public class Country extends AbstractLocation {
 
 
 }
+
