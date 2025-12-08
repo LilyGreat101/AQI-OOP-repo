@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 public class Country extends AbstractLocation {
 
     private ArrayList<City> cities;

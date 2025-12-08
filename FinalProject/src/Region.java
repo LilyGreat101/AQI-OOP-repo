@@ -17,10 +17,14 @@ public class Region extends AbstractLocation {
     public ArrayList<Country> getCountries(){
         return countries;
     }
+    public Country getCountry(String name) {
+        for (Country country : countries) {
+            if (country.getName().equals(name)) {
+                return country;
+            }
+        }
+        return null;
 
 
-
-
-
-
+    }
 }
