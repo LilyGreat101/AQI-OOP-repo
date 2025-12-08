@@ -1,6 +1,8 @@
 public class AQIAnalysis {
 
     public static String getStatus(double aqiValue){
+         if (aqi < 0)
+            return "Error: Negative AQI";
     if (aqiValue<=50) return "Good";
     else if (aqiValue<=100) return "Moderate";
     else if (aqiValue<=150) return "Unhealthy for Sensitive People";
@@ -17,6 +19,7 @@ public class AQIAnalysis {
 
 
 }
+
 
 
 
